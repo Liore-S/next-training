@@ -2,13 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
-import Layout from "../../components/layout";
+import Layout, { secTitle } from "../../components/layout";
 
 export default function Fpost() {
   return (
     <Layout>
       <Head>
-        <title>FPost</title>
+        <title>{secTitle}</title>
       </Head>
       <h1>First Post</h1>
       <h2>

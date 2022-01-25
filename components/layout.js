@@ -4,7 +4,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-const name = "Ilham";
+const name = "Iluhamu Ilyasviel vonRasyid";
+const nama = "Ilyas Rasyid";
+export const secTitle = "Detail";
 export const siteTitle = "Next.js Training Website";
 
 export default function Layout({ children, home }) {
@@ -50,7 +52,7 @@ export default function Layout({ children, home }) {
             </Link>
             <h2 className={Utilstyles.headingLg}>
               <Link href="/">
-                <a className={Utilstyles.colorInherit}>{name}</a>
+                <a className={Utilstyles.colorInherit}>{nama}</a>
               </Link>
             </h2>
           </>
