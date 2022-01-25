@@ -35,7 +35,17 @@ export default function Home({ allPostsData }) {
             <a>More</a>
           </Link>
         </p>
-
+        <p>
+          Checkout{" "}
+          <a
+            href="https://swr.vercel.app/"
+            target="_blank"
+            rel="noreferrer noopenner"
+          >
+            SWR{" "}
+          </a>
+          for data fetching.
+        </p>
         <p>
           (For more Tutorial{" "}
           <a
@@ -43,7 +53,15 @@ export default function Home({ allPostsData }) {
             target="_blank"
             rel="noreferrer noopenner"
           >
-            Next.js tutorial
+            Next.js tutorial{" "}
+          </a>
+          and{" "}
+          <a
+            href="https://nextjs.org/examples"
+            target="_blank"
+            rel="noreferrer noopenner"
+          >
+            Example
           </a>
           .)
         </p>
