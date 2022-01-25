@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-const name = "Iluhamu Ilyasviel vonRasyid";
+const name = "Iluhamu Ilyasviel von Rasyid";
 const nama = "Ilyas Rasyid";
 export const secTitle = "Detail";
 export const siteTitle = "Next.js Training Website";
@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/Ayame-dorime.jpg"
+              src="/images/Prisma-Illya.png"
               className={Utilstyles.borderCircle}
               height={200}
               width={200}
@@ -42,7 +42,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/Ayame-dorime.jpg"
+                  src="/images/Prisma-Illya.png"
                   className={Utilstyles.borderCircle}
                   height={144}
                   width={144}
