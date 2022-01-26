@@ -26,3 +26,14 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.player-wrapper {
+  position: relative;
+  padding-top: 57%;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

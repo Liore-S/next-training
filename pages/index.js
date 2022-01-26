@@ -36,6 +36,11 @@ export default function Home({ allPostsData }) {
           </Link>
         </p>
         <p>
+          <Link href="../post/Video">
+            Music
+          </Link>
+        </p>
+        <p>
           Checkout{" "}
           <a
             href="https://swr.vercel.app/"

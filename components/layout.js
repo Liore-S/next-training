@@ -11,7 +11,7 @@ export const siteTitle = "Next.js Training Website";
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container1}>
       <Head>
         <link rel="icon" href="/favicon.ico"></link>
         <meta
