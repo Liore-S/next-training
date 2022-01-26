@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section className={utilStyles.containerM}>
         <p>
           Selmat Pagi gan, ndang barke Next.js e. Lihat di{" "}
           <a
@@ -71,7 +71,7 @@ export default function Home({ allPostsData }) {
           .)
         </p>
       </section>
-      <section className={"${utilSyles.headingMd} ${utilStyles.passing1px}"}>
+      <section className={`${utilStyles.containerM} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
