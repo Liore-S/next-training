@@ -32,34 +32,34 @@ export default function Video({ results }) {
             playing={playing}
           ></YoutubeVideoPlayer>
         </Box>
-        <SimpleGrid columns={[1,2,3]} spacing={8} my="15">
+        <SimpleGrid columns={[1, 2, 3]} spacing={8} my="15">
           {results && results.map((video) => {
-              return (
-                <Box key={video.id} mx={10}>
-                  <Image
-                    src={video.snippet.thumbnails.maxres?.url}
-                    width={1920}
-                    height={1080}
-                    alt={video.snippet.title}
-                    onClick={() => {
-                      setCurrentVideo(video);
-                      setPlaying(true);
-                      scrollTop();
-                    }}
-                  ></Image>
-                  <Heading
-                    as="h4"
-                    fontSize="sm"
-                    textAlign="left"
-                    noOfLines={1}
-                    mt={-5}
-                    mb={20}
-                  >
-                    {video.snippet.title}
-                  </Heading>
-                </Box>
-              );
-            })}
+            return (
+              <Box key={video.id} mx={10}>
+                <Image
+                  src={video.snippet.thumbnails.maxres?.url}
+                  width={1920}
+                  height={1080}
+                  alt={video.snippet.title}
+                  onClick={() => {
+                    setCurrentVideo(video);
+                    setPlaying(true);
+                    scrollTop();
+                  }}
+                ></Image>
+                <Heading
+                  as="h4"
+                  fontSize="sm"
+                  textAlign="left"
+                  noOfLines={1}
+                  mt={-5}
+                  mb={20}
+                >
+                  {video.snippet.title}
+                </Heading>
+              </Box>
+            );
+          })}
         </SimpleGrid>
       </Box>
     </Layout>
