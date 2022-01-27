@@ -1,17 +1,26 @@
 import matter from "gray-matter";
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
+import Head from "next/head";
+import Date from '../../components/date'
+import utilStyles from '../../styles/utils.module.css'
+import styles from "../../components/layout.module.css";
 
-export default function Post({postData}) {
+export default function Post({ postData }) {
   return (
     <Layout>
-      {postData.title}
-      <br />
-      {postData.id}
-      <br />
-      {postData.date}
-      <br />
-      <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}></div>
+      <div className={styles.container}>
+        <Head>
+          <title>{postData.title}</title>
+        </Head>
+        <article>
+          <h1 className={utilStyles.headingX1}>{postData.title}</h1>
+          <div className={utilStyles.lightText}>
+            <Date dateString={postData.date} />
+          </div>
+          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}></div>
+        </article>
+      </div>
     </Layout>
   );
 }
