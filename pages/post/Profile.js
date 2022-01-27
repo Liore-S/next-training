@@ -2,6 +2,7 @@ import Image from "next/image"
 import Layout from "../../components/layout"
 import utilStyles from "../../styles/utils.module.css"
 import styles from "../../components/layout.module.css";
+import Link from "next/link";
 
 export default function Profile({ results }) {
     //console.log(results)
@@ -20,9 +21,15 @@ export default function Profile({ results }) {
                         <h3>Subscriber : {img.statistics.subscriberCount}</h3>
                         <h3>Viewcount : {img.statistics.viewCount}</h3>
                         <h3>VideoCount : {img.statistics.videoCount}</h3>
+                        
                     </>
                 )
             })}
+            <div className={styles.backToHome}>
+                <Link href="/">
+                    <a>← Back to home</a>
+                </Link>
+            </div>
         </div>
     )
 }
