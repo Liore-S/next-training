@@ -39,6 +39,10 @@ export default function Home({ allPostsData }) {
           <Link href="../post/Video">
             Music
           </Link>
+          {" "}
+          <Link href="../post/Profile">
+            Profile
+          </Link>
         </p>
         <p>
           Checkout{" "}
