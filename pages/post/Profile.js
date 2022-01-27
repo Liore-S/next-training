@@ -7,20 +7,20 @@ import Link from "next/link";
 export default function Profile({ results }) {
     //console.log(results)
     return (
-        <div className={styles.container}>
-            {results && results.map((img) => {
+        <div className={`${styles.container} ${utilStyles.centered}`}>
+            {results && results.map((profile) => {
                 return (
                     <>
                         <Image className={utilStyles.borderCircle}
-                            src={img.snippet.thumbnails.high.url}
+                            src={profile.snippet.thumbnails.high.url}
                             width={400}
                             height={400}
-                            alt={img.snippet.title}>
+                            alt={profile.snippet.title}>
                         </Image>
-                        <h2>{img.snippet.localized.title}</h2>
-                        <h3>Subscriber : {img.statistics.subscriberCount}</h3>
-                        <h3>Viewcount : {img.statistics.viewCount}</h3>
-                        <h3>VideoCount : {img.statistics.videoCount}</h3>
+                        <h2>{profile.snippet.localized.title}</h2>
+                        <h3>Subscriber : {profile.statistics.subscriberCount}</h3>
+                        <h3>Viewcount : {profile.statistics.viewCount}</h3>
+                        <h3>VideoCount : {profile.statistics.videoCount}</h3>
                         
                     </>
                 )

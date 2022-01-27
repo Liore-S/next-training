@@ -5,6 +5,10 @@
     line-height: 1.5;
 }
 
+.centered{
+    text-align: center;
+}
+
 .heading2x1{
     font-size: 2.5rem;
     line-height: 1.2;
