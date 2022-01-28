@@ -12,6 +12,7 @@ const scrollTop = () => {
 
 export default function Video({ results, results2 }) {
   //console.log(results)
+  const MY_PLAYLIST = process.env.YOUTUBE_PLAYLIST_ID;
   const [currentVideo, setCurrentVideo] = useState(results[0]);
   const [playing, setPlaying] = useState(false);
   return (
@@ -33,7 +34,7 @@ export default function Video({ results, results2 }) {
               <div key={pList} className={utilStyles.centered} >
                 <p>Playlist :{" "}
                   <a className={utilStyles.noUnderlines}
-                    href={`https://www.youtube.com/playlist?list=${process.env.YOUTUBE_PLAYLIST_ID}`}>
+                    href={`https://www.youtube.com/playlist?list=${MY_PLAYLIST}`}>
                     {pList.snippet.title}</a></p>
               </div>
             )
