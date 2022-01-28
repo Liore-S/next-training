@@ -59,3 +59,7 @@
 .lightText {
     color: #666;
 }
+
+.noUnderline{
+    text-decoration: none;
+}
