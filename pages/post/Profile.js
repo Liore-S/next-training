@@ -10,19 +10,21 @@ export default function Profile({ results }) {
         <div className={`${styles.container} ${utilStyles.centered}`}>
             {results && results.map((profile) => {
                 return (
-                    <>
-                        <Image className={utilStyles.borderCircle}
-                            src={profile.snippet.thumbnails.high.url}
-                            width={400}
-                            height={400}
-                            alt={profile.snippet.title}>
-                        </Image>
+                    <div>
+                        <div>
+                            <Image className={utilStyles.borderCircle}
+                                src={profile.snippet.thumbnails.high.url}
+                                width={400}
+                                height={400}
+                                alt={profile.snippet.title}>
+                            </Image>
+                        </div>
                         <h2>{profile.snippet.localized.title}</h2>
                         <h3>Subscriber : {profile.statistics.subscriberCount}</h3>
                         <h3>Viewcount : {profile.statistics.viewCount}</h3>
                         <h3>VideoCount : {profile.statistics.videoCount}</h3>
-                        
-                    </>
+
+                    </div>
                 )
             })}
             <div className={styles.backToHome}>
