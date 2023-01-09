@@ -36,7 +36,7 @@ export default function Profile({ results }) {
     )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const MY_ID = process.env.YOUTUBE_USER_ID;
     const API_KEY = process.env.YOUTUBE_API_KEY;
     const REQUEST_URL = `https://youtube.googleapis.com/youtube/v3/channels?part=statistics&part=snippet&id=${MY_ID}&key=${API_KEY}`;
