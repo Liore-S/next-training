@@ -52,7 +52,7 @@ export default function Video({ results, results2 }) {
               <Box key={video.id} mx={10}>
 
                 <Image
-                  src={video.snippet.thumbnails.maxres?.url}
+                  src={video.snippet.thumbnails.maxres?.url || video.snippet.thumbnails.high.url}
                   width={1920}
                   height={1080}
                   alt={video.snippet.title}
