@@ -14,13 +14,13 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.containerM}>
         <p>
-          Selmat Pagi gan, ndang barke Next.js e. Lihat di{" "}
+          Selamat Pagi gan, ndang barke Next.js e. Lihat di{" "}
           <a
             href="https://www.youtube.com/channel/UCwNsgnp07DPQFzhfhIGsgaA"
             target="_blank"
             rel="noreferrer noopenner"
           >
-            Youtube Liore{" "}
+            Youtube{" "}
           </a>
           supaya pintar.{" "}
           <Link href="../post/Fpost">

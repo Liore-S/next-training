@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-const name = "Iluhamu Ilyasviel von Rasyid";
+const name = "Ilham Ilyas Rasyid";
 const nama = "Ilyas Rasyid";
 export const secTitle = "Detail";
 export const siteTitle = "Next.js Training Website";
@@ -60,7 +60,7 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome} className={styles.container}>
+        <div className={styles.backToHome + " " + styles.container}>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
