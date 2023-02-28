@@ -37,7 +37,7 @@ export default function Home({ allPostsData }) {
           </Link>
         </p>
         <p>
-          Checkout{" "}
+          Learn{" "}
           <a
             href="https://swr.vercel.app/"
             target="_blank"
